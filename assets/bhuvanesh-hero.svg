@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="320">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bh-hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="45%" stop-color="#190B12"/>
+      <stop offset="85%" stop-color="#260C1B"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+
+    <!-- Ambient Burgundy Glows -->
+    <radialGradient id="bh-glow-burgundy" cx="20%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#451126" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bh-glow-rose" cx="85%" cy="75%" r="60%">
+      <stop offset="0%" stop-color="#C77B9B" stop-opacity="0.25"/>
+      <stop offset="45%" stop-color="#701A3D" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bh-hero-accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126"/>
+      <stop offset="30%" stop-color="#701A3D"/>
+      <stop offset="65%" stop-color="#C77B9B"/>
+      <stop offset="100%" stop-color="#E5B5C7"/>
+    </linearGradient>
+
+    <linearGradient id="bh-hero-text-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F8F0F3"/>
+      <stop offset="100%" stop-color="#E5B5C7"/>
+    </linearGradient>
+
+    <linearGradient id="bh-hero-shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E5B5C7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
+      <animate attributeName="x1" from="-100%" to="200%" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="0%" to="300%" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="bh-hero-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#451126" stroke-width="0.75" stroke-opacity="0.28"/>
+      <circle cx="30" cy="0" r="1" fill="#701A3D" fill-opacity="0.4"/>
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="bh-glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="bh-subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .bh-font-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Display', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
+      .bh-font-mono {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', 'Roboto Mono', Menlo, Consolas, monospace;
+        letter-spacing: 0.08em;
+      }
+      .bh-font-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'SF Pro Text', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+      }
+      
+      /* Pulse Animation */
+      @keyframes bhPulse {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.03); }
+      }
+      
+      /* Orbit Drift */
+      @keyframes bhOrbit {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      /* Wave Drift */
+      @keyframes bhWaveDrift {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -120; }
+      }
+
+      .bh-orbit-ring {
+        transform-origin: 770px 150px;
+        animation: bhOrbit 42s linear infinite;
+      }
+
+      .bh-orbit-ring-rev {
+        transform-origin: 770px 150px;
+        animation: bhOrbit 58s linear infinite reverse;
+      }
+
+      .bh-flow-path {
+        stroke-dasharray: 8 6;
+        animation: bhWaveDrift 14s linear infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .bh-orbit-ring, .bh-orbit-ring-rev, .bh-flow-path {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="900" height="320" rx="14" fill="url(#bh-hero-bg)"/>
+  <rect width="900" height="320" rx="14" fill="url(#bh-glow-burgundy)"/>
+  <rect width="900" height="320" rx="14" fill="url(#bh-glow-rose)"/>
+  <rect width="900" height="320" rx="14" fill="url(#bh-hero-grid)"/>
+
+  <!-- Border Frame -->
+  <rect x="1" y="1" width="898" height="318" rx="13" fill="none" stroke="#451126" stroke-width="1.2" stroke-opacity="0.75"/>
+  <rect x="2" y="2" width="896" height="316" rx="12" fill="none" stroke="#701A3D" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- Restrained Orbital Geometry (Right Side) -->
+  <g opacity="0.65">
+    <!-- Outer Ring -->
+    <circle cx="770" cy="150" r="115" fill="none" stroke="#451126" stroke-width="1" stroke-dasharray="3 7" stroke-opacity="0.6"/>
+    <!-- Middle Rotational Ring -->
+    <g class="bh-orbit-ring">
+      <ellipse cx="770" cy="150" rx="85" ry="85" fill="none" stroke="#701A3D" stroke-width="1.2" stroke-dasharray="14 10" stroke-opacity="0.8"/>
+      <circle cx="855" cy="150" r="3.5" fill="#C77B9B" filter="url(#bh-subtle-glow)"/>
+      <circle cx="685" cy="150" r="2" fill="#E5B5C7"/>
+    </g>
+    <!-- Inner Counter-Rotational Ring -->
+    <g class="bh-orbit-ring-rev">
+      <ellipse cx="770" cy="150" rx="55" ry="55" fill="none" stroke="#C77B9B" stroke-width="0.9" stroke-dasharray="6 8" stroke-opacity="0.5"/>
+      <circle cx="770" cy="95" r="2.5" fill="#E5B5C7"/>
+    </g>
+    <!-- Geometric Core Node -->
+    <circle cx="770" cy="150" r="16" fill="#190B12" stroke="#701A3D" stroke-width="1.5"/>
+    <circle cx="770" cy="150" r="5" fill="#C77B9B" filter="url(#bh-glow-filter)">
+      <animate attributeName="r" values="4;6.5;4" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Flow Wave Path Across Lower Canvas -->
+  <path class="bh-flow-path" d="M -10 240 Q 200 200, 420 235 T 880 220" fill="none" stroke="#701A3D" stroke-width="1.4" stroke-opacity="0.45"/>
+  <path d="M 0 255 C 240 225, 480 265, 900 235" fill="none" stroke="#451126" stroke-width="0.8" stroke-opacity="0.35"/>
+
+  <!-- Technical HUD Crosshairs & Corner Guides -->
+  <g stroke="#C77B9B" stroke-width="1" stroke-opacity="0.45">
+    <!-- Top-Left Corner -->
+    <path d="M 24 34 L 24 24 L 34 24" fill="none"/>
+    <!-- Top-Right Corner -->
+    <path d="M 876 34 L 876 24 L 866 24" fill="none"/>
+    <!-- Bottom-Left Corner -->
+    <path d="M 24 286 L 24 296 L 34 296" fill="none"/>
+    <!-- Bottom-Right Corner -->
+    <path d="M 876 286 L 876 296 L 866 296" fill="none"/>
+  </g>
+
+  <!-- Status Pill Badge (Top Left) -->
+  <g transform="translate(56, 42)">
+    <rect width="258" height="26" rx="13" fill="#190B12" fill-opacity="0.85" stroke="#451126" stroke-width="1"/>
+    <!-- Pulsing Status Dot -->
+    <circle cx="15" cy="13" r="4" fill="#C77B9B" filter="url(#bh-subtle-glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="28" y="17" fill="#E5B5C7" class="bh-font-mono" font-size="10" font-weight="600">SYS // CHENNAI • B.TECH IT (9.34)</text>
+  </g>
+
+  <!-- Top Right Metric Badge -->
+  <g transform="translate(685, 42)">
+    <rect width="160" height="26" rx="13" fill="#190B12" fill-opacity="0.85" stroke="#451126" stroke-width="1"/>
+    <text x="14" y="17" fill="#C77B9B" class="bh-font-mono" font-size="10" font-weight="600">R.M.K. ENGG COLLEGE</text>
+  </g>
+
+  <!-- Main Hero Typography -->
+  <!-- Name -->
+  <g transform="translate(56, 126)">
+    <text x="0" y="0" fill="url(#bh-hero-text-grad)" class="bh-font-title" font-size="44" filter="url(#bh-subtle-glow)">Bhuvanesh M P</text>
+  </g>
+
+  <!-- Glowing Underline Accent with Shimmer -->
+  <g transform="translate(56, 142)">
+    <!-- Base Gradient Line -->
+    <rect width="420" height="3" rx="1.5" fill="url(#bh-hero-accent-grad)"/>
+    <!-- Traveling Shimmer Highlight -->
+    <rect width="420" height="3" rx="1.5" fill="url(#bh-hero-shimmer)"/>
+    <!-- Trailing Dot -->
+    <circle cx="430" cy="1.5" r="2.5" fill="#E5B5C7" filter="url(#bh-subtle-glow)"/>
+  </g>
+
+  <!-- Primary Role Line -->
+  <g transform="translate(56, 180)">
+    <text x="0" y="0" fill="#E5B5C7" class="bh-font-sub" font-size="17" font-weight="500">
+      AI Developer <tspan fill="#701A3D" font-weight="700"> / </tspan> Full-Stack Developer <tspan fill="#701A3D" font-weight="700"> / </tspan> Hackathon Builder
+    </text>
+  </g>
+
+  <!-- Micro Technical Tags -->
+  <g transform="translate(56, 218)">
+    <rect x="0" y="-14" width="138" height="20" rx="4" fill="#190B12" stroke="#451126" stroke-width="0.8"/>
+    <text x="10" y="0" fill="#C77B9B" class="bh-font-mono" font-size="9.5" font-weight="600">AGENTIC SYSTEMS</text>
+
+    <rect x="146" y="-14" width="148" height="20" rx="4" fill="#190B12" stroke="#451126" stroke-width="0.8"/>
+    <text x="156" y="0" fill="#C77B9B" class="bh-font-mono" font-size="9.5" font-weight="600">VOICE ARCHITECTURES</text>
+
+    <rect x="302" y="-14" width="128" height="20" rx="4" fill="#190B12" stroke="#451126" stroke-width="0.8"/>
+    <text x="312" y="0" fill="#C77B9B" class="bh-font-mono" font-size="9.5" font-weight="600">FULL-STACK ENG</text>
+  </g>
+
+  <!-- Technical Footer Coordinate Coordinates (Inside Banner) -->
+  <g transform="translate(56, 282)">
+    <text x="0" y="0" fill="#701A3D" class="bh-font-mono" font-size="9.5" letter-spacing="0.1em">LOC: 13.0827° N, 80.2707° E // REPO: bhuvaneshmp15-glitch // STACK: REACT • PYTHON • MCP • JAVA</text>
+  </g>
+</svg>
+
