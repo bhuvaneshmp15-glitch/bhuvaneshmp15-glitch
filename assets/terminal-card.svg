@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 370" width="100%" height="370">
+  <defs>
+    <linearGradient id="bh-term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F060C"/>
+      <stop offset="50%" stop-color="#180914"/>
+      <stop offset="100%" stop-color="#12060E"/>
+    </linearGradient>
+
+    <linearGradient id="bh-term-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#220B1A"/>
+      <stop offset="50%" stop-color="#2D0F23"/>
+      <stop offset="100%" stop-color="#1A0915"/>
+    </linearGradient>
+
+    <filter id="bh-term-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .bh-term-title {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+        font-size: 11px;
+        fill: #C77B9B;
+        letter-spacing: 0.05em;
+      }
+      .bh-term-prompt {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+        font-size: 12px;
+        font-weight: 600;
+        fill: #E5B5C7;
+      }
+      .bh-term-cmd {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+        font-size: 12px;
+        fill: #FFFFFF;
+        font-weight: 700;
+      }
+      .bh-term-out {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+        font-size: 11.5px;
+        fill: #F8F0F3;
+        line-height: 1.5;
+      }
+      .bh-term-dim {
+        fill: #C77B9B;
+      }
+      .bh-term-accent {
+        fill: #E5B5C7;
+        font-weight: 600;
+      }
+      .bh-term-flag {
+        fill: #701A3D;
+      }
+      @keyframes bhBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .bh-cursor {
+        animation: bhBlink 1s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect width="940" height="370" rx="14" fill="url(#bh-term-bg)"/>
+  <rect x="0.5" y="0.5" width="939" height="369" rx="13.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+
+  <!-- Window Header Bar -->
+  <path d="M 0 14 C 0 6.27 6.27 0 14 0 L 926 0 C 933.73 0 940 6.27 940 14 L 940 38 L 0 38 Z" fill="url(#bh-term-header)"/>
+  <line x1="0" y1="38" x2="940" y2="38" stroke="#451126" stroke-width="1"/>
+
+  <!-- Window Control Dots -->
+  <circle cx="24" cy="19" r="5.5" fill="#701A3D"/>
+  <circle cx="42" cy="19" r="5.5" fill="#C77B9B"/>
+  <circle cx="60" cy="19" r="5.5" fill="#E5B5C7"/>
+
+  <!-- Window Title -->
+  <text x="470" y="23" text-anchor="middle" class="bh-term-title">bhuvanesh@workstation:~ (zsh)</text>
+
+  <!-- Terminal Body Content -->
+  <!-- Line 1: whoami -->
+  <g transform="translate(32, 68)">
+    <text x="0" y="0" class="bh-term-prompt">$ <tspan class="bh-term-cmd">whoami</tspan></text>
+    <text x="0" y="20" class="bh-term-out">Bhuvanesh M P <tspan class="bh-term-dim">—</tspan> AI Developer <tspan class="bh-term-dim">•</tspan> Full-Stack Developer <tspan class="bh-term-dim">•</tspan> Hackathon Builder</text>
+  </g>
+
+  <!-- Line 2: cat education.txt -->
+  <g transform="translate(32, 126)">
+    <text x="0" y="0" class="bh-term-prompt">$ <tspan class="bh-term-cmd">cat education.txt</tspan></text>
+    <text x="0" y="20" class="bh-term-out">
+      <tspan class="bh-term-accent">B.Tech in Information Technology</tspan> @ R.M.K. Engineering College (2025 – 2029)
+    </text>
+    <text x="0" y="38" class="bh-term-out bh-term-dim">
+      CGPA: <tspan class="bh-term-accent">9.34</tspan> // Secondary: Sethu Bhaskara (12th: 92.83% | 10th: 91.4%)
+    </text>
+  </g>
+
+  <!-- Line 3: cat experience.txt -->
+  <g transform="translate(32, 202)">
+    <text x="0" y="0" class="bh-term-prompt">$ <tspan class="bh-term-cmd">cat experience.txt</tspan></text>
+    <text x="0" y="20" class="bh-term-out">
+      • <tspan class="bh-term-accent">Python Programming Intern</tspan> @ Codtech IT Solutions (May–Jun 2026): RAG chatbot, ElevenLabs assistant
+    </text>
+    <text x="0" y="38" class="bh-term-out">
+      • <tspan class="bh-term-accent">Full Stack Development Intern</tspan> @ Cognifyz Technologies (Oct–Nov 2025): Full-stack integrations
+    </text>
+  </g>
+
+  <!-- Line 4: echo $PRINCIPLE -->
+  <g transform="translate(32, 278)">
+    <text x="0" y="0" class="bh-term-prompt">$ <tspan class="bh-term-cmd">echo $ENGINEERING_PRINCIPLE</tspan></text>
+    <text x="0" y="20" class="bh-term-out">
+      <tspan fill="#E5B5C7">"Build systems that hold up — AI whose execution, latency, and telemetry can be verified."</tspan>
+    </text>
+  </g>
+
+  <!-- Prompt Cursor -->
+  <g transform="translate(32, 334)">
+    <text x="0" y="0" class="bh-term-prompt">$ </text>
+    <rect x="16" y="-11" width="8" height="14" fill="#C77B9B" class="bh-cursor"/>
+  </g>
+</svg>
+

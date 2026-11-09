@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 310" width="100%" height="310">
+  <defs>
+    <linearGradient id="bh-rec-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140710"/>
+      <stop offset="60%" stop-color="#1F0A19"/>
+      <stop offset="100%" stop-color="#160812"/>
+    </linearGradient>
+
+    <linearGradient id="bh-rec-card-bg-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#160812"/>
+      <stop offset="60%" stop-color="#240C1D"/>
+      <stop offset="100%" stop-color="#140710"/>
+    </linearGradient>
+
+    <radialGradient id="bh-rec-glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#140710" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bh-bar-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#11060D"/>
+      <stop offset="50%" stop-color="#1B0916"/>
+      <stop offset="100%" stop-color="#11060D"/>
+    </linearGradient>
+
+    <style>
+      .bh-rec-serif {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+      .bh-rec-sans {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .bh-rec-mono {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+        letter-spacing: 0.08em;
+      }
+      .bh-watermark {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-weight: 900;
+        fill: #701A3D;
+        fill-opacity: 0.18;
+      }
+    </style>
+  </defs>
+
+  <!-- ================= TOP SPOTLIGHT CARDS ================= -->
+
+  <!-- Left Card: API Heist -->
+  <g transform="translate(0, 0)">
+    <rect width="455" height="195" rx="14" fill="url(#bh-rec-card-bg)"/>
+    <rect width="455" height="195" rx="14" fill="url(#bh-rec-glow)"/>
+    <rect x="0.5" y="0.5" width="454" height="194" rx="13.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+
+    <!-- Watermark behind text -->
+    <text x="440" y="145" text-anchor="end" class="bh-watermark" font-size="120">1st</text>
+
+    <!-- Header Badge -->
+    <g transform="translate(26, 26)">
+      <rect width="180" height="22" rx="4" fill="#2D0F23" stroke="#701A3D" stroke-width="0.8"/>
+      <text x="10" y="15" fill="#E5B5C7" class="bh-rec-mono" font-size="9" font-weight="600">TECHNOVIT'26 • VIT CHENNAI</text>
+    </g>
+
+    <!-- Big Title -->
+    <text x="26" y="86" fill="#FFFFFF" class="bh-rec-serif" font-size="25">API Heist — 1st Place</text>
+
+    <!-- Subtitle -->
+    <text x="26" y="116" fill="#F8F0F3" class="bh-rec-sans" font-size="12.5" font-weight="500">
+      National-Level API Hackathon
+    </text>
+    <text x="26" y="136" fill="#C77B9B" class="bh-rec-sans" font-size="11.5">
+      Solved algorithmic riddles by chaining event APIs under rapid time limits.
+    </text>
+
+    <!-- Status Tag -->
+    <g transform="translate(26, 154)">
+      <circle cx="5" cy="5" r="3" fill="#E5B5C7"/>
+      <text x="14" y="9" fill="#E5B5C7" class="bh-rec-mono" font-size="9.5" font-weight="700">CHAMPION • SEPT 2026</text>
+    </g>
+  </g>
+
+  <!-- Right Card: DataQuest 3.0 -->
+  <g transform="translate(485, 0)">
+    <rect width="455" height="195" rx="14" fill="url(#bh-rec-card-bg-2)"/>
+    <rect width="455" height="195" rx="14" fill="url(#bh-rec-glow)"/>
+    <rect x="0.5" y="0.5" width="454" height="194" rx="13.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+
+    <!-- Watermark behind text -->
+    <text x="440" y="145" text-anchor="end" class="bh-watermark" font-size="105">OFFER</text>
+
+    <!-- Header Badge -->
+    <g transform="translate(26, 26)">
+      <rect width="186" height="22" rx="4" fill="#2D0F23" stroke="#701A3D" stroke-width="0.8"/>
+      <text x="10" y="15" fill="#E5B5C7" class="bh-rec-mono" font-size="9" font-weight="600">VIT CHENNAI • DATAQUEST 3.0</text>
+    </g>
+
+    <!-- Big Title -->
+    <text x="26" y="86" fill="#FFFFFF" class="bh-rec-serif" font-size="25">Internship Recipient</text>
+
+    <!-- Subtitle -->
+    <text x="26" y="116" fill="#F8F0F3" class="bh-rec-sans" font-size="12.5" font-weight="500">
+      DataQuest 3.0 Hackathon
+    </text>
+    <text x="26" y="136" fill="#C77B9B" class="bh-rec-sans" font-size="11.5">
+      Participated with team and secured an industry internship opportunity.
+    </text>
+
+    <!-- Status Tag -->
+    <g transform="translate(26, 154)">
+      <circle cx="5" cy="5" r="3" fill="#E5B5C7"/>
+      <text x="14" y="9" fill="#E5B5C7" class="bh-rec-mono" font-size="9.5" font-weight="700">TECHNICAL RECOGNITION</text>
+    </g>
+  </g>
+
+  <!-- ================= BOTTOM METRIC RIBBON ================= -->
+  <g transform="translate(0, 215)">
+    <rect width="940" height="90" rx="12" fill="url(#bh-bar-bg)"/>
+    <rect x="0.5" y="0.5" width="939" height="89" rx="11.5" fill="none" stroke="#451126" stroke-width="1"/>
+
+    <!-- Stat 1: 9.34 -->
+    <g transform="translate(50, 48)">
+      <text x="0" y="0" fill="#FFFFFF" class="bh-rec-serif" font-size="26">9.34</text>
+      <text x="0" y="20" fill="#C77B9B" class="bh-rec-mono" font-size="9.5" font-weight="600">ACADEMICS</text>
+      <text x="75" y="0" fill="#E5B5C7" class="bh-rec-sans" font-size="11">CGPA • B.Tech IT</text>
+      <text x="75" y="18" fill="#701A3D" class="bh-rec-sans" font-size="10.5">R.M.K. Engineering College</text>
+    </g>
+
+    <line x1="260" y1="20" x2="260" y2="70" stroke="#451126" stroke-width="1" stroke-dasharray="2 3"/>
+
+    <!-- Stat 2: 1st Place -->
+    <g transform="translate(295, 48)">
+      <text x="0" y="0" fill="#FFFFFF" class="bh-rec-serif" font-size="26">1st</text>
+      <text x="0" y="20" fill="#C77B9B" class="bh-rec-mono" font-size="9.5" font-weight="600">HACKATHON</text>
+      <text x="50" y="0" fill="#E5B5C7" class="bh-rec-sans" font-size="11">API Heist Winner</text>
+      <text x="50" y="18" fill="#701A3D" class="bh-rec-sans" font-size="10.5">technoVIT'26 • VIT Chennai</text>
+    </g>
+
+    <line x1="500" y1="20" x2="500" y2="70" stroke="#451126" stroke-width="1" stroke-dasharray="2 3"/>
+
+    <!-- Stat 3: OCI -->
+    <g transform="translate(535, 48)">
+      <text x="0" y="0" fill="#FFFFFF" class="bh-rec-serif" font-size="26">OCI</text>
+      <text x="0" y="20" fill="#C77B9B" class="bh-rec-mono" font-size="9.5" font-weight="600">CERTIFIED</text>
+      <text x="56" y="0" fill="#E5B5C7" class="bh-rec-sans" font-size="11">Oracle AI Foundations</text>
+      <text x="56" y="18" fill="#701A3D" class="bh-rec-sans" font-size="10.5">Valid through Jul 2028</text>
+    </g>
+
+    <line x1="730" y1="20" x2="730" y2="70" stroke="#451126" stroke-width="1" stroke-dasharray="2 3"/>
+
+    <!-- Stat 4: 9 Repos -->
+    <g transform="translate(765, 48)">
+      <text x="0" y="0" fill="#FFFFFF" class="bh-rec-serif" font-size="26">9</text>
+      <text x="0" y="20" fill="#C77B9B" class="bh-rec-mono" font-size="9.5" font-weight="600">REPOSITORIES</text>
+      <text x="30" y="0" fill="#E5B5C7" class="bh-rec-sans" font-size="11">Active Public Projects</text>
+      <text x="30" y="18" fill="#701A3D" class="bh-rec-sans" font-size="10.5">Python • TypeScript • Java</text>
+    </g>
+  </g>
+</svg>
+

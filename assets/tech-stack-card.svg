@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" width="100%" height="360">
+  <defs>
+    <linearGradient id="bh-skill-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140710"/>
+      <stop offset="60%" stop-color="#1C0916"/>
+      <stop offset="100%" stop-color="#12060E"/>
+    </linearGradient>
+
+    <style>
+      .bh-sk-num {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+        font-size: 9.5px;
+        fill: #C77B9B;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+      .bh-sk-title {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-size: 20px;
+        font-weight: 700;
+        fill: #FFFFFF;
+        letter-spacing: -0.01em;
+      }
+      .bh-sk-body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 12px;
+        fill: #E5B5C7;
+        line-height: 1.5;
+      }
+      .bh-sk-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 11px;
+        fill: #C77B9B;
+      }
+    </style>
+  </defs>
+
+  <!-- ================= ROW 1 ================= -->
+
+  <!-- Card 1: 01 LANGUAGES -->
+  <g transform="translate(0, 0)">
+    <rect width="298" height="165" rx="12" fill="url(#bh-skill-card-bg)"/>
+    <rect x="0.5" y="0.5" width="297" height="164" rx="11.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+    <text x="24" y="32" class="bh-sk-num">01 // LANGUAGES</text>
+    <text x="24" y="66" class="bh-sk-title">Python <tspan fill="#C77B9B" font-size="11" font-family="'SF Mono', monospace">• PRIMARY</tspan></text>
+    <text x="24" y="98" class="bh-sk-body">Java • TypeScript • JavaScript</text>
+    <text x="24" y="122" class="bh-sk-sub">SQL (MySQL) • Scripting &amp; Automation</text>
+  </g>
+
+  <!-- Card 2: 02 AI • ML • AGENTS -->
+  <g transform="translate(321, 0)">
+    <rect width="298" height="165" rx="12" fill="url(#bh-skill-card-bg)"/>
+    <rect x="0.5" y="0.5" width="297" height="164" rx="11.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+    <text x="24" y="32" class="bh-sk-num">02 // AI • ML • AGENTS</text>
+    <text x="24" y="66" class="bh-sk-title">Multi-Agent Systems</text>
+    <text x="24" y="98" class="bh-sk-body">Model Context Protocol (MCP) • RAG</text>
+    <text x="24" y="122" class="bh-sk-sub">ElevenLabs Voice • NLP • Fast Pipelines</text>
+  </g>
+
+  <!-- Card 3: 03 FRONTEND -->
+  <g transform="translate(642, 0)">
+    <rect width="298" height="165" rx="12" fill="url(#bh-skill-card-bg)"/>
+    <rect x="0.5" y="0.5" width="297" height="164" rx="11.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+    <text x="24" y="32" class="bh-sk-num">03 // FRONTEND</text>
+    <text x="24" y="66" class="bh-sk-title">React 18 &amp; Vite</text>
+    <text x="24" y="98" class="bh-sk-body">TypeScript • Tailwind CSS</text>
+    <text x="24" y="122" class="bh-sk-sub">Responsive Web • SVG Motion Art</text>
+  </g>
+
+  <!-- ================= ROW 2 ================= -->
+
+  <!-- Card 4: 04 BACKEND & APIS -->
+  <g transform="translate(0, 185)">
+    <rect width="298" height="165" rx="12" fill="url(#bh-skill-card-bg)"/>
+    <rect x="0.5" y="0.5" width="297" height="164" rx="11.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+    <text x="24" y="32" class="bh-sk-num">04 // BACKEND &amp; APIS</text>
+    <text x="24" y="66" class="bh-sk-title">Node.js • Bun • Hono</text>
+    <text x="24" y="98" class="bh-sk-body">REST APIs • WebSockets</text>
+    <text x="24" y="122" class="bh-sk-sub">Event Orchestration • Async Services</text>
+  </g>
+
+  <!-- Card 5: 05 DATA & STORAGE -->
+  <g transform="translate(321, 185)">
+    <rect width="298" height="165" rx="12" fill="url(#bh-skill-card-bg)"/>
+    <rect x="0.5" y="0.5" width="297" height="164" rx="11.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+    <text x="24" y="32" class="bh-sk-num">05 // DATA &amp; STORAGE</text>
+    <text x="24" y="66" class="bh-sk-title">MySQL &amp; Caches</text>
+    <text x="24" y="98" class="bh-sk-body">Relational Schema • Indexing</text>
+    <text x="24" y="122" class="bh-sk-sub">Local Knowledge-Bases • Sub-1s Fallback</text>
+  </g>
+
+  <!-- Card 6: 06 TOOLS & FUNDAMENTALS -->
+  <g transform="translate(642, 185)">
+    <rect width="298" height="165" rx="12" fill="url(#bh-skill-card-bg)"/>
+    <rect x="0.5" y="0.5" width="297" height="164" rx="11.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+    <text x="24" y="32" class="bh-sk-num">06 // PRACTICES &amp; TOOLS</text>
+    <text x="24" y="66" class="bh-sk-title">Git • GitHub • Agile</text>
+    <text x="24" y="98" class="bh-sk-body">OOP • System Flow Design</text>
+    <text x="24" y="122" class="bh-sk-sub">CPU Benchmarking (~3.5 min / 100k)</text>
+  </g>
+</svg>
+
