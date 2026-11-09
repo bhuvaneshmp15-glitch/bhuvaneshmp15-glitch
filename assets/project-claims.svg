@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 265" width="100%" height="265">
+  <defs>
+    <linearGradient id="cl-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140710"/>
+      <stop offset="50%" stop-color="#200B1B"/>
+      <stop offset="100%" stop-color="#12060E"/>
+    </linearGradient>
+
+    <radialGradient id="cl-glow-right" cx="85%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#9E2A54" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#451126" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#140710" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="cl-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .cl-font-serif {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+      }
+      .cl-font-sans {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .cl-font-mono {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+        letter-spacing: 0.08em;
+      }
+      @keyframes clPulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.95; }
+      }
+      .cl-pulse-node {
+        animation: clPulse 2.8s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cl-pulse-node { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="940" height="265" rx="14" fill="url(#cl-card-bg)"/>
+  <rect width="940" height="265" rx="14" fill="url(#cl-glow-right)"/>
+  <rect x="0.5" y="0.5" width="939" height="264" rx="13.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+
+  <!-- ================= LEFT: CONTENT & METRICS ================= -->
+
+  <!-- Top Category Line -->
+  <g transform="translate(36, 32)">
+    <rect width="210" height="20" rx="4" fill="#240C1D" stroke="#701A3D" stroke-width="0.8"/>
+    <text x="8" y="14" fill="#E5B5C7" class="cl-font-mono" font-size="9" font-weight="700">
+      02 // MULTIMODAL • INSPECTION • 2026
+    </text>
+  </g>
+
+  <!-- Title & Narrative -->
+  <g transform="translate(36, 76)">
+    <text x="0" y="0" fill="#FFFFFF" class="cl-font-serif" font-size="28" filter="url(#cl-glow)">Automated Claims Engine</text>
+    <text x="0" y="24" fill="#F8F0F3" class="cl-font-sans" font-size="12.5" font-weight="500">
+      Multi-modal damage verification inspecting visual &amp; dialogue claim evidence.
+    </text>
+    <text x="0" y="44" fill="#C77B9B" class="cl-font-sans" font-size="11">
+      <tspan fill="#E5B5C7" font-weight="600">BUILT:</tspan> Computer vision verification • multi-asset parsing (cars, tech, parcels) • state routing
+    </text>
+  </g>
+
+  <!-- 3 Prominent Metrics Row -->
+  <g transform="translate(36, 172)">
+    <!-- Metric 1: 3 Object Classes -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" fill="#FFFFFF" class="cl-font-serif" font-size="24">3 Classes</text>
+      <text x="0" y="18" fill="#C77B9B" class="cl-font-mono" font-size="9" font-weight="600">CARS, TECH, PARCELS</text>
+    </g>
+
+    <line x1="135" y1="-18" x2="135" y2="24" stroke="#451126" stroke-width="1" stroke-dasharray="2 3"/>
+
+    <!-- Metric 2: 100% Pipeline -->
+    <g transform="translate(160, 0)">
+      <text x="0" y="0" fill="#FFFFFF" class="cl-font-serif" font-size="24">100%</text>
+      <text x="0" y="18" fill="#C77B9B" class="cl-font-mono" font-size="9" font-weight="600">AUTOMATED WORKFLOW</text>
+    </g>
+
+    <line x1="300" y1="-18" x2="300" y2="24" stroke="#451126" stroke-width="1" stroke-dasharray="2 3"/>
+
+    <!-- Metric 3: Sub 2s Latency -->
+    <g transform="translate(325, 0)">
+      <text x="0" y="0" fill="#FFFFFF" class="cl-font-serif" font-size="24">&lt; 2.0s</text>
+      <text x="0" y="18" fill="#C77B9B" class="cl-font-mono" font-size="9" font-weight="600">PIPELINE VERIFICATION</text>
+    </g>
+  </g>
+
+  <!-- Bottom Tech Stack Pills -->
+  <g transform="translate(36, 230)">
+    <rect x="0" y="-13" width="62" height="18" rx="4" fill="#1C0916" stroke="#451126" stroke-width="0.8"/>
+    <text x="11" y="0" fill="#E5B5C7" class="cl-font-mono" font-size="8.5">Python</text>
+
+    <rect x="68" y="-13" width="115" height="18" rx="4" fill="#1C0916" stroke="#451126" stroke-width="0.8"/>
+    <text x="79" y="0" fill="#E5B5C7" class="cl-font-mono" font-size="8.5">Computer Vision</text>
+
+    <rect x="189" y="-13" width="112" height="18" rx="4" fill="#1C0916" stroke="#451126" stroke-width="0.8"/>
+    <text x="200" y="0" fill="#E5B5C7" class="cl-font-mono" font-size="8.5">Claims State Engine</text>
+
+    <rect x="307" y="-13" width="168" height="18" rx="4" fill="#1C0916" stroke="#701A3D" stroke-width="0.8"/>
+    <text x="318" y="0" fill="#C77B9B" class="cl-font-mono" font-size="8.5">HackerRank Orchestrate</text>
+  </g>
+
+  <!-- ================= RIGHT: ARCHITECTURE DIAGRAM ================= -->
+  <g transform="translate(620, 35)">
+    <!-- Diagram Canvas Container -->
+    <rect width="280" height="195" rx="10" fill="#170813" stroke="#451126" stroke-width="1"/>
+    
+    <!-- Top Diagram Label -->
+    <text x="16" y="24" fill="#C77B9B" class="cl-font-mono" font-size="9" font-weight="600">CLAIM VERIFICATION FLOW</text>
+
+    <!-- Node 1: Visual Intake -->
+    <g transform="translate(24, 46)">
+      <rect width="105" height="34" rx="5" fill="#240C1D" stroke="#701A3D" stroke-width="1"/>
+      <text x="10" y="16" fill="#F8F0F3" class="cl-font-mono" font-size="8.5" font-weight="600">Evidence Image</text>
+      <text x="10" y="27" fill="#C77B9B" class="cl-font-mono" font-size="7.5">Car / Tech / Parcel</text>
+    </g>
+
+    <!-- Flow Arrow 1 -->
+    <path d="M 130 63 L 158 63" stroke="#701A3D" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <circle cx="144" cy="63" r="2.5" fill="#E5B5C7" class="cl-pulse-node"/>
+
+    <!-- Node 2: Classifier -->
+    <g transform="translate(160, 46)">
+      <rect width="95" height="34" rx="5" fill="#2D0F23" stroke="#C77B9B" stroke-width="1"/>
+      <text x="10" y="16" fill="#FFFFFF" class="cl-font-mono" font-size="8.5" font-weight="700">CV Detector</text>
+      <text x="10" y="27" fill="#E5B5C7" class="cl-font-mono" font-size="7.5">Damage Severity</text>
+    </g>
+
+    <!-- Connecting Path Down -->
+    <path d="M 207 80 L 207 105 L 140 105" stroke="#701A3D" stroke-width="1.2"/>
+
+    <!-- Node 3: Policy Cross-Check -->
+    <g transform="translate(24, 115)">
+      <rect width="105" height="34" rx="5" fill="#240C1D" stroke="#701A3D" stroke-width="1"/>
+      <text x="10" y="16" fill="#F8F0F3" class="cl-font-mono" font-size="8.5" font-weight="600">Claim Context</text>
+      <text x="10" y="27" fill="#C77B9B" class="cl-font-mono" font-size="7.5">Dialogue Match</text>
+    </g>
+
+    <!-- Flow Arrow 2 -->
+    <path d="M 130 132 L 158 132" stroke="#701A3D" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <circle cx="144" cy="132" r="2.5" fill="#E5B5C7" class="cl-pulse-node"/>
+
+    <!-- Node 4: Verified Verdict -->
+    <g transform="translate(160, 115)">
+      <rect width="95" height="34" rx="5" fill="#3D122E" stroke="#E5B5C7" stroke-width="1"/>
+      <text x="10" y="16" fill="#FFFFFF" class="cl-font-mono" font-size="8.5" font-weight="700">Audit Verdict</text>
+      <text x="10" y="27" fill="#C77B9B" class="cl-font-mono" font-size="7.5">Structured JSON</text>
+    </g>
+
+    <!-- Bottom Status Strip -->
+    <g transform="translate(16, 175)">
+      <circle cx="6" cy="0" r="3" fill="#C77B9B"/>
+      <text x="16" y="3" fill="#E5B5C7" class="cl-font-mono" font-size="8">ORCHESTRATED ENGINE // HACKATHON BUILD</text>
+    </g>
+  </g>
+</svg>

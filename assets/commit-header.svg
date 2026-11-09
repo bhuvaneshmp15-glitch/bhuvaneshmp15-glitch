@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 95" width="100%" height="95">
+  <defs>
+    <linearGradient id="com-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#140710"/>
+      <stop offset="50%" stop-color="#1F0A19"/>
+      <stop offset="100%" stop-color="#140710"/>
+    </linearGradient>
+
+    <style>
+      .com-serif {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-size: 21px;
+        font-weight: 700;
+        fill: #FFFFFF;
+        letter-spacing: -0.01em;
+      }
+      .com-mono {
+        font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+        letter-spacing: 0.1em;
+      }
+      .com-sans {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+    </style>
+  </defs>
+
+  <rect width="940" height="95" rx="10" fill="url(#com-bg)"/>
+  <rect x="0.5" y="0.5" width="939" height="94" rx="9.5" fill="none" stroke="#451126" stroke-width="1.2"/>
+
+  <!-- Left Side: Title & Subtitle -->
+  <g transform="translate(32, 34)">
+    <text x="0" y="0" fill="#C77B9B" class="com-mono" font-size="9.5" font-weight="700">COMMIT LOG • REAL GITHUB ACTIVITY</text>
+    <text x="0" y="28" fill="#FFFFFF" class="com-serif">A year of building, one square at a time.</text>
+  </g>
+
+  <!-- Right Side: Real Metrics -->
+  <g transform="translate(680, 42)">
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" fill="#FFFFFF" class="com-serif" font-size="22">9</text>
+      <text x="0" y="18" fill="#C77B9B" class="com-mono" font-size="8.5" font-weight="600">PUBLIC REPOS</text>
+    </g>
+
+    <line x1="90" y1="-14" x2="90" y2="22" stroke="#451126" stroke-width="1" stroke-dasharray="2 2"/>
+
+    <g transform="translate(115, 0)">
+      <text x="0" y="0" fill="#FFFFFF" class="com-serif" font-size="22">2026</text>
+      <text x="0" y="18" fill="#C77B9B" class="com-mono" font-size="8.5" font-weight="600">ACTIVE BUILDER</text>
+    </g>
+  </g>
+</svg>
